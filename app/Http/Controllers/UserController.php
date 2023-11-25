@@ -145,6 +145,6 @@ class UserController extends Controller
             'status' => true,
             'message' => 'Login Success',
             'user' => $user,
-        ]);
+        ], 200);
     }
 }

@@ -3,6 +3,7 @@
 use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,4 +18,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::post('/login', [App\Http\Controllers\UserController::class, 'login']);
 Route::apiResource('user', UserController::class);
+Route::apiResource('product', ProductController::class);
 
