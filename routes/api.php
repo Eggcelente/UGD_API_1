@@ -4,6 +4,7 @@ use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use Illuminate\Support\Facades\App;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,7 @@ use App\Http\Controllers\ProductController;
 */
 
 Route::post('/login', [App\Http\Controllers\UserController::class, 'login']);
+Route::post('/inputProduct', [App\Http\Controllers\ProductController::class, 'inputProduct']);
 Route::apiResource('user', UserController::class);
 Route::apiResource('product', ProductController::class);
 
