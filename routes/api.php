@@ -21,5 +21,5 @@ Route::post('/login', [App\Http\Controllers\UserController::class, 'login']);
 Route::post('/inputProduct', [App\Http\Controllers\ProductController::class, 'inputProduct']);
 Route::apiResource('user', UserController::class);
 Route::apiResource('product', ProductController::class);
-Route::apiResource('Bookinh', BookingController::class);
+Route::apiResource('Booking', BookingController::class);
 
